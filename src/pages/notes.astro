@@ -1,0 +1,53 @@
+---
+import '../styles/global.css'
+const pageTitle = "About Me";
+const identity = {
+  firstName: "Andy",
+  country: "Earth",
+  occupation: "Engineer",
+};
+
+const skills = [
+  "Engineering Design",
+  "Biomedical Systems",
+  "AI / ML",
+  "Technical Writing",
+  "Research Prototyping",
+];
+---
+<nav>
+  <a href="/">Home</a>
+  <a href="/work/">Work</a>
+  <a href="/writing/">Writing</a>
+  <a href="/notes/">About</a>
+</nav>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+        <main>
+            <h1>{pageTitle}</h1>
+            <h2> this is my first website! </h2>
+            <p> I am working through astro's intro tutorial. this is about page. my first one i built myself. </p>
+            <p>My goal is to finish in 3 days.</p> 
+            <p> this site will update as i complete more of the tutorial, so keep checking how is my journey going!</p>
+
+            <p> Quick facts about me: </p>
+            <ul>
+                <li> I'm {identity.firstName}.</li>
+                <li> I live on {identity.country} and I'm a {identity.occupation}.</li>
+            </ul>
+            <p> my areas of interest: </p>
+            <ul>
+                {skills.map((skill) => <li class="skill">{skill}</li>)}
+            </ul>
+        </main>
+    </body>
+</html>
