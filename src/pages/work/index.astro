@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/baselayout.astro';
+
+const projects = (await getCollection('work')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const pageTitle = "Work";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <p>Projects, experiments, and portfolio items.</p>
+  <ul class="project-list">
+    {projects.map((project) => (
+      <li>
+        <h3><a href={`/work/${project.slug}/`}>{project.data.title}</a></h3>
+        <p>{project.data.description}</p>
+        {project.data.link && <a href={project.data.link} class="external-link" target="_blank">View Project &rarr;</a>}
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
+
+<style>
+  .project-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .project-list li {
+    margin-bottom: 2rem;
+  }
+  .project-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  .external-link {
+    font-size: 0.875rem;
+    text-decoration: none;
+  }
+  .external-link:hover {
+    text-decoration: underline;
+  }
+</style>

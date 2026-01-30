@@ -1,9 +1,13 @@
 ---
 import BaseLayout from '../layouts/baselayout.astro';
-const pageTitle = "Home Page";
-import Greeting from '../components/greeting';
+const pageTitle = "Amorfati";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-  <Greeting client:load messages={["hey","hallo","hola"]}/>
+  <p>
+    Welcome. This is a quiet personal knowledge workspace.
+    I assemble my thoughts, learning, notes, and experiments here.
+  </p>
+  <p>
+    Explore <a href="/writing/">Writing</a>, <a href="/notes/">Notes</a>, or <a href="/work/">Work</a>.
+  </p>
 </BaseLayout>

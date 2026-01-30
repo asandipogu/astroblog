@@ -6,12 +6,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "new": "node scripts/create-entry.mjs"
   },
   "dependencies": {
     "@astrojs/preact": "^4.1.3",
     "@astrojs/rss": "^4.0.15",
-    "astro": "^5.16.16",
+    "astro": "^5.17.1",
     "preact": "^10.28.2"
   }
 }

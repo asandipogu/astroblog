@@ -1,35 +1,12 @@
 ---
+import BaseLayout from '../layouts/baselayout.astro';
 const pageTitle = "About";
-const identity = {
-  firstName: "Andy",
-  country: "Earth",
-  occupation: "Engineer",
-};
-
-const skills = [
-  "Engineering Design",
-  "Biomedical Systems",
-  "AI / ML",
-  "Technical Writing",
-  "Research Prototyping",
-];
-import BaseLayout from "../layouts/baselayout.astro";
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <main>
-        <h2>this is my first website! </h2>
-        <p>I am working through astro's intro tutorial. this is about page. my first one i built myself. </p>
-        <p>My goal is to finish in 3 days.</p> 
-        <p> this site will update as i complete more of the tutorial, so keep checking how is my journey going!</p>
-
-        <p> Quick facts about me: </p>
-        <ul>
-        <li> I'm {identity.firstName}.</li>
-        <li> I live on {identity.country} and I'm a {identity.occupation}.</li>
-        </ul>
-        <p> my areas of interest: </p>
-        <ul>
-            {skills.map((skill) => <li class="skill">{skill}</li>)}
-        </ul>
-    </main>
+  <p>
+    I am a developer and writer. This site reflects my interest in minimal design and deep thinking.
+  </p>
+  <p>
+    No algorithms, no noise. Just files.
+  </p>
 </BaseLayout>
