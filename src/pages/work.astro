@@ -1,33 +1,14 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/baselayout.astro';
 const pageTitle = "Work";
 ---
-
-<nav>
-  <a href="/">Home</a>
-  <a href="/work/">Work</a>
-  <a href="/writing/">Writing</a>
-  <a href="/notes/">About</a>
-</nav>
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-        <main>
-            <h1>Work</h1>
-            <p>Selected projects focused on engineering design, research and experimentation.</p>
-            <section>
-                <h2>Project Title</h2>
-                <p>Project Description</p>
-                <p><a href="/work/project-1/">Read more</a></p>
-            </section>
-        </main>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <main>
+        <p>Selected projects focused on engineering design, research and experimentation.</p>
+        <section>
+        <h2>Project Title</h2>
+        <p>Project Description</p>
+        <p><a href="/work/project-1/">Read more</a></p>
+        </section>
+    </main>
+</BaseLayout>

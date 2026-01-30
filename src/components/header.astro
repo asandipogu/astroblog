@@ -1,0 +1,20 @@
+---
+import Navigation from "./navigation.astro";
+import Menu from "./menu.astro";
+import Themeicon from "./themeicon.astro";
+---
+<header>
+    <nav>
+        <div>
+            <Themeicon/>
+            <Menu />
+        </div>
+        <Navigation />
+    </nav>
+</header>
+<style>
+    div {
+        display: : flex;
+        justify-content: space-between;
+    }
+</style>

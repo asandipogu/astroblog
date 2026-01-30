@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -25,8 +25,15 @@ html {
 
 body {
   margin: 0;
-  padding: var(--space-4) var(--space-2);
-  line-height: 1.75;
+  padding: var(--space-3) var(--space-2);
+  line-height: 1.65;
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: var(--space-4) var(--space-2);
+    line-height: 1.75;
+  }
 }
 
 main {
@@ -43,16 +50,20 @@ h3 {
   margin-bottom: var(--space-2);
 }
 
-h1 {  font-size: 2.5rem;
+h1 {
+  font-size: 2.5rem;
 }
 
-h2 {  font-size: 1.5rem;
+h2 {
+  font-size: 1.5rem;
 }
 
-h3 {  font-size: 1.125rem;
+h3 {
+  font-size: 1.125rem;
 }
 
-p {  margin: 0 0 var(--space-2);
+p {
+  margin: 0 0 var(--space-2);
 }
 
 small {
@@ -88,11 +99,79 @@ nav {
   margin: 0 auto var(--space-4);
 }
 
-nav a {
-  margin-right: var(--space-2);
-  text-decoration: none;
+/* nav styles */
+.menu {
+  background-color: #0d0950;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav-links {
+  width: 100%;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0d0950;
+}
+
+.nav-links a:hover,
+.nav-links a:focus{
+  background-color: #ff9776;
+}
+
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .menu {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark .nav-links a:hover,
+.dark .nav-links a:focus {
+  color: #0d0950;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+.dark a {
+  color: #ff9776;
 }

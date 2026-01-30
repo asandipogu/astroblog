@@ -1,49 +1,9 @@
 ---
-import '../styles/global.css';
-const pageTitle = "Andy" ;
+import BaseLayout from '../layouts/baselayout.astro';
+const pageTitle = "Home Page";
+import Greeting from '../components/greeting';
 ---
-
-<nav>
-  <a href="/">Home</a>
-  <a href="/work/">Work</a>
-  <a href="/writing/">Writing</a>
-  <a href="/notes/">About</a>
-</nav>
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<main>
-			<h1>Andy</h1>
-			<p>
-			Engineering Design and Biomedical Design student at IIT Madras.
-			I work on problems at the intersection of engineering, research,
-			and systems thinking.
-			</p>
-			<p>
-			This site is a quiet workspace; a place to document projects,
-			write resolved thoughts, and curate ideas I find worth keeping.
-			</p>
-			<section>
-				<h2>currently</h2>
-				<ul>
-					<li>learning and building with astro</li>
-					<li>exploring ai/ml and biomedical systems</li>
-					<li>exploring and learning web2, web3</li>
-				</ul>
-			</section>
-			<section>
-				<p>
-					if you're interested in my work or thinking, you can reach me at <strong>anudeepsanwork@gmail.com</strong>.
-				</p>
-			</section>
-		</main>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+  <Greeting client:load messages={["hey","hallo","hola"]}/>
+</BaseLayout>
