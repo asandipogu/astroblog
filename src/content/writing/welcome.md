@@ -13,7 +13,7 @@ But staying in the space changes how you see it.
 
 Web3 isn’t a moral system. It isn’t automatically fair, decentralized, or liberating. It’s an emerging coordination layer. A new way to organize trust, ownership, and value. Like every major system before it, it doesn’t change human nature. It changes incentives. And incentives reshape power.
 
-From a game theory perspective, this matters more than belief. When payoff structures change, strategies change. Legacy systems reward hierarchy, credentials, and institutional access. Web3 shifts some of that toward speed, literacy, network position, and early participation. This doesn’t eliminate elites — it reshuffles them. A new elite always forms. The only real question is who gets positioned early enough to enter it.
+From a game theory perspective, this matters more than belief. When payoff structures change, strategies change. Legacy systems reward hierarchy, credentials, and institutional access. Web3 shifts some of that toward speed, literacy, network position, and early participation. This doesn’t eliminate elites, it reshuffles them. A new elite always forms. The only real question is who gets positioned early enough to enter it.
 
 Right now, power is moving between legacy structures and new coordination systems. Not cleanly. Not ethically. Not equally. But structurally. In these transitions, neutrality isn’t stability, it’s delay. And delay is a losing strategy. People who wait for clarity and legitimacy usually arrive after advantage has already concentrated.
 
@@ -34,4 +34,4 @@ those who adapt, those who get left behind.
 
 I'm certainly not getting left behind :-)
 
-I want to understand it, build within it, and position myself inside it — before the tables finish flipping.
+I want to understand it, build within it, and position myself inside it, before the tables finish flipping.
